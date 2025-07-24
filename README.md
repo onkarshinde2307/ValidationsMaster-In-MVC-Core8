@@ -77,16 +77,17 @@ ValidationsMaster-MVC-Core8/
 ## 🖼️ Screenshots
 
 ### 🏠 Home Page  
-<img src="Screenshots/Home.png" alt="Home Page" width="600"/>
+<img src="ValidationsMaster-MVC-Core-8/Screenshots/Home.png" alt="Home Page" width="600"/>
 
 ### 📝 Register Page  
-<img src="Screenshots/Register.png" alt="Register Page" width="600"/>
+<img src="ValidationsMaster-MVC-Core-8/Screenshots/Register.png" alt="Register Page" width="600"/>
 
 ### ✅ Successfully Registered Page  
-<img src="Screenshots/RegisterSuccess.png" alt="Success Page" width="600"/>
+<img src="ValidationsMaster-MVC-Core-8/Screenshots/RegisterSuccess.png" alt="Success Page" width="600"/>
 
 ### 📋 User List Page  
-<img src="Screenshots/UserList.png" alt="User List Page" width="600"/>
+<img src="ValidationsMaster-MVC-Core-8/Screenshots/UserList.png" alt="User List Page" width="600"/>
+
  
 ---
 
