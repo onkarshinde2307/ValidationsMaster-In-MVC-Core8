@@ -1,0 +1,146 @@
+﻿@{
+    ViewData["Title"] = "Welcome to ValidationsMaster - ASP.NET Core 8 MVC";
+}
+
+<!-- Custom Styles for Home Page -->
+<style>
+    .hero {
+        background: linear-gradient(135deg, #ff5858, #f09819);  
+        color: #fff;
+        padding: 100px 30px;
+        text-align: center;
+        border-radius: 15px;
+        margin-bottom: 40px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+        }
+
+    .features {
+        margin: 50px 0;
+    }
+
+    .feature-box {
+        padding: 30px;
+        border-radius: 12px;
+        transition: all 0.3s ease-in-out;
+        background: #ffffff;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+        text-align: center;
+    }
+
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .feature-box i {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #7b68ee;  
+        }
+
+    .section-title {
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        color: #444;
+    }
+
+    .btn-custom {
+        font-size: 1.1rem;
+        padding: 12px 30px;
+        margin-top: 20px;
+        border-radius: 8px;
+    }
+
+    .about-section {
+        background: #fff;
+        padding: 40px 30px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.06);
+    }
+
+ 
+    .hero, .feature-box, .about-section {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<div class="container hero">
+    <h1>🎯 ValidationsMaster - MVC Core 8</h1>
+    <p class="lead">Master form validations in ASP.NET Core 8 using model binding, Data Annotations, and client-side integration with jQuery & Bootstrap.</p>
+    <a class="btn btn-light btn-custom shadow" href="@Url.Action("Register", "User")">
+        ✍️ Start Validating - Register Now
+    </a>
+</div>
+
+<div class="container features">
+    <h2 class="section-title">Core Features</h2>
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-shield-check"></i>
+                <h5>Server-Side Validations</h5>
+                <p>Ensure strong backend validation using Data Annotations and ModelState to prevent invalid input.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-braces-asterisk"></i>
+                <h5>Client-Side Validations</h5>
+                <p>jQuery Unobtrusive and Bootstrap provide instant feedback and smooth user interaction.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="feature-box">
+                <i class="bi bi-database-check"></i>
+                <h5>EF Core Integration</h5>
+                <p>Safely store validated data using Entity Framework Core and SQL Server with best practices.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container about-section my-5">
+    <h3>📚 About This Project</h3>
+    <p>
+        <strong>ValidationsMaster_MVC_Core_8</strong> is a practical and elegant ASP.NET Core 8 MVC project for mastering form validations.
+        Whether you're a student or developer, this template provides:
+    </p>
+    <ul>
+        <li>✅ Model-driven validation architecture</li>
+        <li>✅ Responsive and accessible forms</li>
+        <li>✅ Clear UI feedback with alerts and Bootstrap</li>
+        <li>✅ Ready for advanced features (auth, custom rules, AJAX)</li>
+    </ul>
+    <p>Built with clean coding standards, scalable structure, and room for production upgrades.</p>
+</div>
+
+<div class="container text-center mb-5">
+    <a class="btn btn-primary btn-lg mx-2" href="@Url.Action("Register", "User")">🧾 Fill Registration Form</a>
+    <a class="btn btn-outline-dark btn-lg mx-2" href="@Url.Action("List", "User")">📋 View User List</a>
+</div>

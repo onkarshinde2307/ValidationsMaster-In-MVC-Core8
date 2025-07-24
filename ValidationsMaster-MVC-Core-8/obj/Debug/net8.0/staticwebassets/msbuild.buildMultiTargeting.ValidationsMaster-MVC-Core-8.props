@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ValidationsMaster-MVC-Core-8.props" />
+</Project>

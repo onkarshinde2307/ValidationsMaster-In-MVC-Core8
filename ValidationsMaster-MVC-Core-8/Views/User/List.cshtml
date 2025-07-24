@@ -1,0 +1,100 @@
+﻿@model IEnumerable<ValidationsMaster_MVC_Core_8.Models.User>
+@{
+    ViewData["Title"] = "User List - ValidationsMaster";
+}
+
+<!-- Consistent Styles -->
+<style>
+    .user-header {
+        background: linear-gradient(135deg, #ff5858, #f09819); /* Sunset Orange */
+        color: #fff;
+        padding: 60px 30px;
+        border-radius: 15px;
+        text-align: center;
+        margin-bottom: 40px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+        .user-header h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+    .table-wrapper {
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    table th {
+        background-color: #dd2476; /* Ruby */
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    table td {
+        text-align: center;
+        vertical-align: middle;
+        padding: 12px 15px;
+    }
+
+    table tbody tr:hover {
+        background-color: #fff4f7;
+    }
+
+    .alert-warning {
+        background-color: #ffe3e3;
+        border: 1px solid #f5c2c2;
+        font-weight: 500;
+    }
+</style>
+
+<!-- Page Title -->
+<div class="container user-header">
+    <h2>📋 Registered Users</h2>
+    <p class="lead">All users who registered through ValidationsMaster are listed here.</p>
+</div>
+
+<div class="container mb-5">
+    @if (!Model.Any())
+    {
+        <div class="alert alert-warning text-center">
+            ⚠️ No users registered yet.
+        </div>
+    }
+    else
+    {
+        <div class="table-wrapper">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover mb-0">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th> Name</th>
+                            <th> Email</th>
+                            <th> Age</th>
+                            <th> Gender</th>
+                            <th> Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var user in Model)
+                        {
+                            <tr>
+                                <td>@user.Id</td>
+                                <td>@user.Name</td>
+                                <td>@user.Email</td>
+                                <td>@user.Age</td>
+                                <td>@user.Gender</td>
+                                <td>@user.Country</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    }
+</div>

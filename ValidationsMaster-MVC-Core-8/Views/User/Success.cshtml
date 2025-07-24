@@ -1,0 +1,63 @@
+﻿@{
+    ViewData["Title"] = "Registration Success";
+}
+
+<!-- Success Page Styles -->
+<style>
+    .success-banner {
+        background: linear-gradient(135deg, #ff512f, #dd2476); /* Sunset to Ruby */
+        color: #fff;
+        padding: 80px 30px;
+        text-align: center;
+        border-radius: 15px;
+        margin: 40px auto;
+        max-width: 700px;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+        .success-banner h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .success-banner p {
+            font-size: 1.25rem;
+        }
+
+    .btn-home {
+        margin-top: 25px;
+        font-size: 1.1rem;
+        padding: 12px 30px;
+        border-radius: 8px;
+    }
+
+    @@keyframes fadeIn {
+        from
+
+    {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    }
+</style>
+
+<!-- Success Content -->
+<div class="container">
+    <div class="success-banner">
+        <h2>🎉 Registration Successful!</h2>
+        <p class="lead">Thank you for registering with <strong>ValidationsMaster</strong>.</p>
+        <p>Your data has been securely validated and saved.</p>
+
+        <a asp-controller="User" asp-action="List" class="btn btn-light btn-home shadow">
+            👥 Go to Registered Users
+        </a>
+    </div>
+</div>
